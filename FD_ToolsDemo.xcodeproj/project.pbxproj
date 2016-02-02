@@ -14,6 +14,12 @@
 		301909791B9D6B14008883AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301909781B9D6B14008883AB /* Images.xcassets */; };
 		3019097C1B9D6B14008883AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3019097A1B9D6B14008883AB /* LaunchScreen.xib */; };
 		301909881B9D6B14008883AB /* FD_ToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301909871B9D6B14008883AB /* FD_ToolsDemoTests.m */; };
+		301909941B9D7042008883AB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 301909911B9D7042008883AB /* Icon.png */; };
+		301909951B9D7042008883AB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 301909921B9D7042008883AB /* Icon@2x.png */; };
+		301909961B9D7042008883AB /* Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 301909931B9D7042008883AB /* Icon@3x.png */; };
+		BAA138641C12C30F007FD778 /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAA138631C12C30F007FD778 /* face.jpg */; };
+		BAADC1E31BABEC1500432715 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAADC1E21BABEC1500432715 /* libmp3lame.a */; };
+		BAE554801C1590A200CADE3E /* FD_DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE5547F1C1590A200CADE3E /* FD_DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,14 @@
 		301909811B9D6B14008883AB /* FD_ToolsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FD_ToolsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		301909861B9D6B14008883AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301909871B9D6B14008883AB /* FD_ToolsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FD_ToolsDemoTests.m; sourceTree = "<group>"; };
+		301909911B9D7042008883AB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		301909921B9D7042008883AB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		301909931B9D7042008883AB /* Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@3x.png"; sourceTree = "<group>"; };
+		BAA138631C12C30F007FD778 /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
+		BAADC1E11BABEC1500432715 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		BAADC1E21BABEC1500432715 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		BAE5547E1C1590A200CADE3E /* FD_DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FD_DrawView.h; sourceTree = "<group>"; };
+		BAE5547F1C1590A200CADE3E /* FD_DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FD_DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAADC1E31BABEC1500432715 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +96,18 @@
 		3019096A1B9D6B14008883AB /* FD_ToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BAA138631C12C30F007FD778 /* face.jpg */,
+				BAADC1E11BABEC1500432715 /* lame.h */,
+				BAADC1E21BABEC1500432715 /* libmp3lame.a */,
+				301909911B9D7042008883AB /* Icon.png */,
+				301909921B9D7042008883AB /* Icon@2x.png */,
+				301909931B9D7042008883AB /* Icon@3x.png */,
 				3019096F1B9D6B14008883AB /* AppDelegate.h */,
 				301909701B9D6B14008883AB /* AppDelegate.m */,
 				301909721B9D6B14008883AB /* ViewController.h */,
 				301909731B9D6B14008883AB /* ViewController.m */,
+				BAE5547E1C1590A200CADE3E /* FD_DrawView.h */,
+				BAE5547F1C1590A200CADE3E /* FD_DrawView.m */,
 				301909751B9D6B14008883AB /* Main.storyboard */,
 				301909781B9D6B14008883AB /* Images.xcassets */,
 				3019097A1B9D6B14008883AB /* LaunchScreen.xib */,
@@ -163,6 +186,7 @@
 		301909601B9D6B14008883AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FD_;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = WFD;
 				TargetAttributes = {
@@ -199,9 +223,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301909951B9D7042008883AB /* Icon@2x.png in Resources */,
+				301909941B9D7042008883AB /* Icon.png in Resources */,
+				301909961B9D7042008883AB /* Icon@3x.png in Resources */,
 				301909771B9D6B14008883AB /* Main.storyboard in Resources */,
 				3019097C1B9D6B14008883AB /* LaunchScreen.xib in Resources */,
 				301909791B9D6B14008883AB /* Images.xcassets in Resources */,
+				BAA138641C12C30F007FD778 /* face.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +249,7 @@
 			files = (
 				301909741B9D6B14008883AB /* ViewController.m in Sources */,
 				301909711B9D6B14008883AB /* AppDelegate.m in Sources */,
+				BAE554801C1590A200CADE3E /* FD_DrawView.m in Sources */,
 				3019096E1B9D6B14008883AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +380,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FD_ToolsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FD_ToolsDemo",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -361,6 +394,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FD_ToolsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FD_ToolsDemo",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -418,6 +455,7 @@
 				3019098D1B9D6B14008883AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3019098E1B9D6B14008883AB /* Build configuration list for PBXNativeTarget "FD_ToolsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +464,7 @@
 				301909901B9D6B14008883AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
